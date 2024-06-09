@@ -16,6 +16,8 @@ ul{
   display: flex;
   gap: 2rem;
 }
+
+/*header*/
 .nav_logo{
   width: 3rem;
   height: auto;
@@ -32,4 +34,26 @@ ul{
 }
 .nav_toggle-btn{
   display: none;
+}
+/*.................*/
+
+/*footer*/
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  bottom: 0;
+  height: 100%;
+  border-top: 2px solid black;
+  padding-top: 1rem;
+}
+.footer_categories a{
+  background-color: rgba(121, 40, 40, 0.664);
+  padding: 0.3rem;
+  border-radius: 4px;
+}
+.footer_copyright{
+  margin-top:1rem;
+  border-top: 1px solid black;
 }
