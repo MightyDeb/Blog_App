@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom"
-import Logo from "../images/blog-icon-vector-image-can-be-used-public-relations-agency_120816-191834.avif"
+import Logo from "../pics/blog-icon-vector-image-can-be-used-public-relations-agency_120816-191834.avif"
 import {FaBarsStaggered } from "react-icons/fa6";
 
 const Header = ()=>{

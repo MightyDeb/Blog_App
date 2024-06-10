@@ -1,9 +1,8 @@
-import React, { useState } from "react";
-import PostItem from "../components/postitem";
+import React, {useState} from "react";
 import DUMMY_POSTS from "../data";
-
-const AuthorPost = ()=>{
-  const [posts, setPosts]= useState(DUMMY_POSTS)
+import PostItem from "../components/postitem";
+const CategoryPost = ()=>{
+    const [posts, setPosts]= useState(DUMMY_POSTS)
   return(
     <section className="author_posts">
       {
@@ -19,5 +18,7 @@ const AuthorPost = ()=>{
     </section>
   )
 }
+  
 
-export default AuthorPost
+
+export default CategoryPost

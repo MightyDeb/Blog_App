@@ -9,7 +9,7 @@ import PostDetail from './pages/postDetail';
 import Register from './pages/register';
 import Login from './pages/login';
 import UserProfile from './pages/userProfile';
-import CreatePost from './pages/createPost';
+import CategoryPost from './pages/categoryPost';
 import Author from './pages/authors';
 import AuthorPost from "./pages/authorPost"
 import Dashboard from './pages/dashboard';
@@ -27,8 +27,8 @@ const router= createBrowserRouter([
       {path: "login", element: <Login />},
       {path: "profile/:id", element: <UserProfile />},
       {path: "authors", element: <Author />},
-      {path: "create", element: <CreatePost />},
-      {path: "posts/categories/:category", element: <AuthorPost />},
+      {path: "posts/users/:id", element: <AuthorPost />},
+      {path: "posts/categories/:category", element: <CategoryPost />},
       {path: "myposts/:id", element: <Dashboard />},
       {path: "posts/:id/edit", element: <EditPost />},
       {path: "logout", element: <Logout />},

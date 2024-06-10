@@ -3,7 +3,7 @@ import {Link} from "react-router-dom"
 import PostAuthor from "./postAuthor"
 export default function PostItem(props){
   const shortDesc = props.desc.length > 145 ? props.desc.substr(0,145)+'  ...Read More' : props.desc
-  const shortTitle = props.title.length > 30 ? props.desc.substr(0,30)+'...' : props.title
+  const shortTitle = props.title.length > 30 ? props.title.substr(0,30)+'...' : props.title
   return(
   <article className="post">
     <div>
