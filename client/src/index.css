@@ -306,3 +306,37 @@ footer{
   padding: 0.5rem;
   border-radius: 10px;
 }
+
+/*.................*/
+
+/*create and edit post*/
+.create-post{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.post-container{
+  text-align: center;
+  margin-top: 2rem;
+}
+.form_error-message{
+  background-color: red;
+  padding:0.3rem;
+  margin:0.5rem;
+}
+.form-front, .form-end{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.7rem 0;
+}
+.form-front input{
+  width: 20rem;
+  text-indent: 5px;
+  padding: 0.2rem;
+}
+.submit-button{
+  padding: 0.3rem;
+  background-color: aquamarine;
+  border-radius: 10px;
+}
