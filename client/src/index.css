@@ -191,6 +191,14 @@ footer{
 }
 /*.................*/
 
+/*logout*/
+.logout_page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+  gap: 0.5rem;
+}
 /*authors*/
 .authors_container{
   display: grid;
@@ -211,4 +219,90 @@ footer{
   overflow: hidden;
   border: 0.5px solid forestgreen;
   margin-right: 1rem;
+}
+/*.................*/
+
+/*user profile*/
+.profile{
+  text-align: center;
+  margin: 1rem;
+}
+.profile_container{
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.profile-btn{
+  background-color: white;
+  padding: 0.7rem;
+  border-radius: 10px;
+  margin: 0.6rem 0;
+  border: 1px solid black;
+}
+.profile_avatar{
+  width: 200px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 1px solid black;
+  overflow: hidden;
+}
+.avatar_form input{
+  visibility: hidden;
+}
+.avatar_form label, .profile_avatar-btn{
+  font-size: 30px;
+  position: absolute;
+  top: 17rem;
+  right: 18rem;
+  border-radius: 50%;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  background-color: blueviolet;
+  padding: 0.2rem;
+}
+.profile h1{
+  font-size: xx-large;
+}
+.profile_form{
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: center;
+}
+.profile form input{
+  padding: 0.5rem;
+  text-indent: 5px;
+  width: 500px;
+}
+.submit_btn{
+  background-color: greenyellow;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.form_error_msg{
+  background-color: red;
+  padding: 0.3rem;
+  font-size: 15px;
+}
+/*.................*/
+
+/*dashboard*/
+.dashboard_post, .dashboard_post-info, .dashboard_post-actions{
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding:0.5rem;
+}
+.dashboard_post{
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.dashboard_btn{
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 10px;
 }
