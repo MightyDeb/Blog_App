@@ -63,6 +63,7 @@ footer{
 .error-page{
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 3rem;
   align-items: center;
   margin-top: 30%;
@@ -83,3 +84,55 @@ footer{
   font-size: xx-large;
 }
 /*.................*/
+
+/*home page- posts cards */
+.posts{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 3rem 1rem;
+}
+.post{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 2rem;
+  gap: 1rem;
+  border-radius: 10%;
+}
+.post_thumbnail{
+  width: 200px;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+.post_author-avatar{
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+  display: inline-block;
+}
+.post_author{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.post_footer{
+  display: flex;
+  align-items: center;
+  gap: 30%
+}
+.post_button{
+  border: 1px solid white;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: black;
+  color:aliceblue;
+}
+.post_button:hover{
+  background-color: aliceblue;
+  border: 1px solid black;
+  color: black;
+}
