@@ -16,6 +16,9 @@ ul{
   display: flex;
   gap: 2rem;
 }
+p{
+  margin: 0.4rem;
+}
 
 /*header*/
 .nav_logo{
@@ -43,7 +46,6 @@ footer{
   flex-direction: column;
   align-items: center;
   gap: 0.3rem;
-  bottom: 0;
   height: 100%;
   border-top: 2px solid black;
   padding-top: 1rem;
@@ -136,3 +138,34 @@ footer{
   border: 1px solid black;
   color: black;
 }
+/*.................*/
+
+/*post detail of individual blog*/
+.post-detail{
+  margin-top: 3rem;
+}
+.post-detail_header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn-post{
+  margin-right: 3rem;
+  padding: 0.5rem;
+  background-color: rgb(116, 52, 245);
+  border-radius: 10px;
+  font-size: 15px;
+}
+.btn-post:hover{
+  padding: 0.6rem;
+}
+.post_heading{
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.post_heading h1{
+  font-size: x-large;
+}
+/*.................*/
