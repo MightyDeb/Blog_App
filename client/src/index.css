@@ -169,3 +169,23 @@ footer{
   font-size: x-large;
 }
 /*.................*/
+
+/*register*/
+.register{
+  margin: 3rem;
+}
+.register_form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+.register_form input{
+  text-indent: 5px;
+  padding: 0.3rem;
+}
+.register_form button{
+  padding: 0.3rem;
+  background-color: red;
+  margin-bottom: 1rem;
+}
