@@ -42,19 +42,45 @@ const createPost = async(req,res,next)=>{
 }
 //  api/posts
 const getPosts = async(req,res,next)=>{
-  res.json("Get Posts")
+  try {
+    const posts = await Post.find().sort({updatedAt: -1})
+    res.status(200).json(posts) //sort by recent
+  } catch (error) {
+    return next(new HttpError(error))
+  }
 }
 //  api/posts/:id
 const getPost = async(req,res,next)=>{
-  res.json("Get Single Post")
+  try {
+    const postId= req.params.id;
+    const post= await Post.findById(postId)
+    if(!post){
+      return next(new HttpError("Post not found.", 404))
+    }
+    res.status(200).json(post)
+  } catch (error) {
+    return next(new HttpError(error))
+  }
 }
 //  api/posts/categories/:category
 const getCatPosts = async(req,res,next)=>{
-  res.json("Get Posts By Category")
+  try {
+    const {category}= req.params
+    const catPosts= await Post.find({category}).sort({createdAt: -1})
+    res.status(200).json(catPosts)
+  } catch (error) {
+    return next(new HttpError(error))
+  }
 }
 //  api/posts/users/:id
 const getUserPosts = async(req,res,next)=>{
-  res.json("Get User Post")
+  try {
+    const {id}= req.params
+    const posts= await Post.find({creator: id}).sort({createdAt: -1})
+    res.status(200).json(posts)
+  } catch (error) {
+    return next(new HttpError(error))
+  }
 }
 //  api/posts/:id
 const editPost = async(req,res,next)=>{
